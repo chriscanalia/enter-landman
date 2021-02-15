@@ -1,6 +1,10 @@
 @import 'variables';
 
 // Base Styles
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,8 +19,12 @@ a {
   text-decoration: none;
 }
 
-section {
+.section-dark {
   background: $main-light-color;
+}
+
+.section-light {
+  background: $light-color;
 }
 
 h1 {
@@ -34,16 +42,20 @@ h1 {
     font-weight: 850 !important;
     color: $accent-color !important;
   }
-  .sell {
+  .btn-sell {
     background: $accent-color;
     border-radius: 8%;
+  }
+  .btn-sell:hover {
+    background: #f4f4f4;
+    color: $accent-color !important;
+    border: 2px solid $accent-color !important;
   }
 }
 
 #home {
   .navbar {
-    background: #333;
-    opacity: 0.7;
+    background: rgba(0, 0, 0, 0.5);
   }
   #hero {
     background: url('../img/showcase.jpg') no-repeat center center/cover;
@@ -76,19 +88,102 @@ h1 {
   z-index: 10;
 }
 
+//carousel
+
 .card-container {
   .col-head {
-    background: $main-med-color;
+    background: $accent-color;
+    color: #fff;
   }
   .card {
-    .card-header {
-      background: $main-dark-color;
-      color: #fff;
+    overflow: hidden;
+    height: 400px;
+    color: #fff;
+
+    .btn-card {
+      background: $main-med-color;
     }
-    .card-body {
-      .btn-card {
-        background: $main-med-color;
+    img {
+      filter: brightness(0.3);
+    }
+  }
+}
+
+#faqs {
+  h1 {
+    color: $accent-color;
+  }
+  .faqs-line {
+    width: 100%;
+    height: 5px;
+    background: $accent-color;
+  }
+  .card {
+    background: $accent-light-color;
+    color: #fff;
+
+    .btn {
+      color: #fff;
+      /*background: $accent-color;*/
+      i {
+        color: $accent-color;
       }
     }
+
+    .btn.active {
+      border-color: #fff;
+    }
+  }
+}
+
+//Contact Section
+#contact-us {
+  .card {
+    .row-spacer {
+      height: 30px;
+    }
+    .card-header {
+      color: #fff;
+    }
+    form {
+      .btn-submit {
+        background: $accent-color;
+        color: #fff;
+      }
+      .btn-submit:hover {
+        background: #f4f4f4;
+        color: $accent-color !important;
+        border: 2px solid $accent-color !important;
+      }
+      input:focus {
+        outline-color: $main-dark-color !important;
+      }
+      .form-line {
+        height: 1px;
+        background: #d3d3d3;
+      }
+    }
+  }
+}
+
+//Footer
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+
+  a {
+    color: #fff;
+    margin: 10px 15px;
+  }
+
+  a:hover {
+    color: $accent-color;
+  }
+  p {
+    color: #fff;
   }
 }

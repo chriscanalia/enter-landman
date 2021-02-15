@@ -12,10 +12,10 @@
   <title>Enter Landman</title>
 </head>
 <body>
-  <section id="home">
+  <section class="section-light pb-5" id="home">
     <header id="hero">
       <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
-        <a class="navbar-brand" href="#">EnterLandman</a>
+        <a class="navbar-brand" href="#"><img src="img/ELM.png" height="50" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks"  >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,14 +27,14 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#faqs">FAQS</a>
+                <a class="nav-link" href="#faqs">FAQS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact-us">Contact Us</a>
               </li>
             </ul>
           
-          <a class="btn  btn-lg btn-outline-success ml-auto sell" href="#contact-us">Sell Now</a>
+          <a class="btn  btn-lg ml-auto btn-sell" href="#contact-us">Sell Now</a>
         </div>
       </nav>
       <div class="content">
@@ -43,59 +43,393 @@
       </div>
   
     </header>
-    <div class="container-fluid card-container px-4">
-      <div class="row py-4 mt-4 mx-auto justify-content-center">
-        <div class="col-lg-5 col-head">
+    <div class="container-fluid card-container my-5 px-5">
+      <div class="row my-4 mx-auto justify-content-center">
+        <div class="col-8 col-lg-5 col-head">
           <h2 class="text-center">How Our Easy 4 Step Process Works</h2>
         </div>
       </div>
-      <div class="row py">
-        <div class="col-md-3">
-          <div class="card">
-            <h5 class="card-header">Step 1</h5>
-            <div class="card-body">
-              <h5 class="card-title">Step One Goes Here</h5>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit pariatur, nisi beatae repellendus architecto, ullam unde consectetur ab, cum voluptate magni. Neque pariatur ipsam vero eligendi hic illo aut ad!</p>
-              <a href="#" class="btn btn-card">Go somewhere</a>
+      <div class="row ">
+        <div class="col-md-6 mx-auto ">
+
+          <!--carousel-->
+          <div id="carouselCards" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              
+                <div class="carousel-item ">
+                  <div class="card bg-dark text-center">
+                    <img src="img/cardBg1.jpg" alt="">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Gather Some Information</h5>
+                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id vel delectus nulla beatae numquam laudantium asperiores. Sint obcaecati recusandae at, tempora inventore possimus atque quo aliquam adipisci quisquam dolores deleniti vitae modi iste magnam aperiam accusamus? Reprehenderit ab amet eius?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card bg-dark text-center">
+                    <img src="img/cardBg2.jpg" alt="">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">We Give You a Cash Offer</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi iusto aspernatur fugiat natus sunt eaque ullam facere esse modi. Quae quod in nisi non aspernatur aperiam quam voluptatibus neque impedit molestiae optio sed, a dicta, maxime eaque, quidem repellendus error?</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="card bg-dark text-center">
+                    <img src="img/cardBg3.jpg" alt="">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">You Accept the Offer</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos natus reiciendis cupiditate quidem, quibusdam similique, architecto maiores reprehenderit alias quas assumenda voluptate aperiam qui, dolor nostrum. Dolorem, eligendi sequi! Modi qui distinctio dicta perspiciatis. Praesentium quo sed iusto debitis eius.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item active">
+                  <div class="card bg-dark text-center">
+                    <img src="img/cardBg4.jpg" alt="">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">You Get Paid!</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi accusantium, illum corrupti dignissimos vitae voluptates eos possimus incidunt mollitia aperiam dolore perspiciatis sint, sunt doloribus pariatur, reiciendis quod ipsa excepturi delectus ipsam perferendis a rem. Ut impedit perspiciatis perferendis rem.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              
             </div>
-          </div>
+            <a class="carousel-control-prev" href="#carouselCards" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              
+            </a>
+            <a class="carousel-control-next" href="#carouselCards" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              
+            </a>
+          </div>  
         </div>
-        <div class="col-md-3">
+      </div>
+    </div>
+  </section>
+
+<!--FAQS-->
+  <section id="faqs">
+    <div id="faqs-header" class="row align-items-center justify-content-center">
+      <div class="col-5 mt-5 mb-n3 py-5 pl-5"><h1>Frequently Asked Questions</h1></div>
+      
+    </div>
+    <div class="row justify-content-center">
+      <div class="col col-6">
+        <div class="accordion" id="accordionFAQS">
           <div class="card">
-            <h5 class="card-header">Featured</h5>
-            <div class="card-body">
-              <h5 class="card-title">Step One Goes Here</h5>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit pariatur, nisi beatae repellendus architecto, ullam unde consectetur ab, cum voluptate magni. Neque pariatur ipsam vero eligendi hic illo aut ad!</p>
-              <a href="#" class="btn btn-card">Go somewhere</a>
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-lg btn-faqs btn-dark btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-plus pr-4"></i>
+                  Are there and fees or expenses to sell my land?
+                </button>
+              </h2>
             </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <h5 class="card-header">Featured</h5>
-            <div class="card-body">
-              <h5 class="card-title">Step One Goes Here</h5>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit pariatur, nisi beatae repellendus architecto, ullam unde consectetur ab, cum voluptate magni. Neque pariatur ipsam vero eligendi hic illo aut ad!</p>
-              <a href="#" class="btn btn-card">Go somewhere</a>
-            </div>
-          </div>
-        </div>
         
-        <div class="col-md-3">
-          <div class="card">
-            <h5 class="card-header">Featured</h5>
-            <div class="card-body">
-              <h5 class="card-title">Step One Goes Here</h5>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit pariatur, nisi beatae repellendus architecto, ullam unde consectetur ab, cum voluptate magni. Neque pariatur ipsam vero eligendi hic illo aut ad!</p>
-              <a href="#" class="btn btn-card">Go somewhere</a>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQS">
+              <div class="card-body bg-dark mx-4">
+                There are no expenses, hidden fees, or closing costs when your property is sold to us. We will not ask for any money up front or at closing.
+              </div>
             </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-lg btn-faqs btn-dark btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-plus pr-4"></i>
+                  What information do you need to purchase my property?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQS">
+              <div class="card-body cb-2 bg-dark mx-4">
+                Filling out the required fields in the Sell Now form is all that is required to get started. The more fields you can answer will help us with the process to make you an offer, but we really don't need all that much information.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-lg btn-faqs btn-dark btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-plus pr-4"></i>
+                  What if I owe delinquent taxes?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQS">
+              <div class="card-body bg-dark mx-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dicta nulla alias consequatur sed, ea eos soluta veniam! Incidunt consequuntur inventore consequatur qui, atque officia omnis debitis vel nostrum iure? Quia nobis quasi obcaecati, suscipit adipisci facere ullam eum incidunt.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-lg btn-4 btn-dark btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour"><i class="fa fa-plus pr-4"></i>
+                  What if I don't have the deed to the property?
+                </button>
+              </h2>
+            </div>
+        
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionFAQS">
+              <div class="card-body bg-dark mx-4">
+                Not a problem! We will prepare a new deed for the purchase of your property and won’t need you to provide a copy of your deed. We can acquire most, if not all, of the documents we need from the county offices to complete the purchase, so it won’t require much effort on your end at all.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn btn-lg btn-dark btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive"><i class="fa fa-plus pr-4"></i>
+                  How long will the process take for me to get paid?
+                </button>
+              </h2>
+            </div>
+        
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionFAQS">
+              <div class="card-body bg-dark mx-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe minima ea error eaque expedita ducimus obcaecati vel magnam dolores fugit, aspernatur quos consequuntur! Debitis itaque quis repudiandae quos perferendis?
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h2 class="mb-0">
+                <button class="btn btn-lg btn-dark btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix"><i class="fa fa-plus pr-4"></i>
+                  Some other question I don't have yet?
+                </button>
+              </h2>
+            </div>
+        
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionFAQS">
+              <div class="card-body bg-dark mx-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo impedit veritatis beatae aperiam libero, ut, accusantium suscipit consequatur quas ducimus totam quia nam laboriosam eius aspernatur hic placeat repudiandae. Nemo.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingSeven">
+              <h2 class="mb-0">
+                <button class="btn btn-lg btn-dark btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven"><i class="fa fa-plus pr-4"></i>
+                  Another question I will ask once I think of something?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionFAQS">
+              <div class="card-body bg-dark mx-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam cum, sit nemo molestiae at, eos nam corrupti tempore earum eveniet aspernatur veritatis eum delectus consequatur alias vel, ex illo.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingEight">
+              <h2 class="mb-0">
+                <button class="btn btn-lg btn-dark btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight"><i class="fa fa-plus pr-4"></i>
+                  Another question I will ask once I think of something?
+                </button>
+              </h2>
+            </div>
+        
+            <div id="collapseEight" class="collapse" aria-labelledby="headingSix" data-parent="#accordionFAQS">
+              <div class="card-body bg-dark mx-4">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam cum vel id libero? Repellat, consequatur delectus magni ab sapiente ducimus mollitia nobis animi, saepe quaerat accusamus deserunt atque unde pariatur!
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Contact-->
+  <section id="contact-us">
+    <div class="section-light container-fluid  py-5 mt-5">
+      <div class="container">
+      <div class="card">
+        <h3 class="card-header bg-dark">Get A No Obligation Cash Offer</h3>
+        <div class="card-body">
+          
+            <form>
+              <div class="row row-spacer"></div>
+              <div class="form-group">
+                <small id="mailingAddressHelp" class="form-text text-muted">
+                  *Please enter your mailing address and contact information here
+                </small>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lastName">Last Name</label>
+                  <input type="password" class="form-control" id="lastName">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="mailingAddress">Address</label>
+                <input type="text" class="form-control" id="mailingAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-group">
+                <label for="mailingAddress2">Address 2</label>
+                <input type="text" class="form-control" id="mailingAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="mailingCity">City</label>
+                  <input type="text" class="form-control" id="mailingCity">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="mailingState">State</label>
+                  <select id="mailingState" class="custom-select form-control">
+                    <option selected>Choose...</option>
+                    <option value="az">Arizona</option>
+                    <option value="co">Colorado</option>
+                    <option value="fl">Florida</option>
+                    <option value="ga">Georgia</option>
+                    <option value="tn">Tennessee</option>
+                    <option value="tx">Texas</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="mailingZip">Zip</label>
+                  <input type="text" class="form-control" id="mailingZip">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="tel" class="form-control" id="phoneNumber">
+                </div>
+              </div>
+              <div class="form-row row-spacer align-items-center">
+                <div class="col form-line"></div>
+              </div>
+              <div class="form-group">
+                <small id="propertyInfoHelp" class="form-text text-muted">
+                  *Please enter the information for the property you would like to sell here
+                </small>
+              </div>
+              <div class="form-group">
+                <label for="propertyAddress">Address</label>
+                <input type="text" class="form-control" id="propertyAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="propertyCity">City</label>
+                  <input type="text" class="form-control" id="propertyCity">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="propertyState">State</label>
+                  <select id="propertyState" class="custom-select form-control">
+                    <option selected>Choose...</option>
+                    <option value="az">Arizona</option>
+                    <option value="co">Colorado</option>
+                    <option value="fl">Florida</option>
+                    <option value="ga">Georgia</option>
+                    <option value="tn">Tennessee</option>
+                    <option value="tx">Texas</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="propertyZip">Zip</label>
+                  <input type="text" class="form-control" id="propertyZip">
+                </div>
+              </div>
+              <div class="form-group form-text mb-0">Are you the owner of the property?</div>
+              <div class="row">
+                <div class="form-check pl-5">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                  <label class="form-check-label" for="exampleRadios1">
+                    <small>Yes</small>
+                  </label>
+                </div>
+                
+              </div>
+              <div class="row form-group">
+                <div class="form-check pl-5">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    <small>No</small> 
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="lengthOwnership">How long have you owned the property?</label>
+                <input type="text" class="form-control" id="lengthOwnership">
+              </div>
+              <div class="form-group">
+                <label for="parcelNumber">What is the parcel number or the tax ID? <small>(You can usually find this on your tax bill)</small></label>
+                <input type="text" class="form-control" id="parcelNumber">
+              </div>
+              <div class="form-group form-text mb-0">Are there any delinquent taxes owed on the propery?</div>
+              <div class="row">
+                <div class="form-check pl-5">
+                  <input class="form-check-input" type="radio" name="owedTax" id="owedTaxYes" value="option1">
+                  <label class="form-check-label" for="exampleRadios1">
+                    <small>Yes</small>
+                  </label>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="form-check pl-5">
+                  <input class="form-check-input" type="radio" name="owedTax" id="owedTaxNo" value="option2">
+                  <label class="form-check-label" for="owedTaxNo">
+                    <small>No</small> 
+                  </label>
+                </div>
+              </div>
+              <div class="form-group form-text mb-0">Are there any mortgages or liens on the propery?</div>
+              <div class="row">
+                <div class="form-check pl-5">
+                  <input class="form-check-input" type="radio" name="liens" id="liensYes" value="option1">
+                  <label class="form-check-label" for="liensYes">
+                    <small>Yes</small>
+                  </label>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="form-check pl-5">
+                  <input class="form-check-input" type="radio" name="liens" id="liensNo" value="option2">
+                  <label class="form-check-label" for="liensNo">
+                    <small>No</small> 
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="askPrice">What is your asking price?</label>
+                <input type="text" class="form-control" id="askPrice">
+              </div>
+
+              <div class="form-group pt-5">
+                <button type="submit" class="btn btn-submit btn-lg">Submit</button>
+              </div>
+              
+            </form>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="faqs">FAQS</section>
-  <section id="contact-us">Contact Us</section>
+
+  <!--Footer-->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+      <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+      <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+      <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>Copyrite &copy; 20201 - EnterLandman</p>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

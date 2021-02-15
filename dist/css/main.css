@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -9,8 +12,11 @@ body {
 a {
   text-decoration: none; }
 
-section {
+.section-dark {
   background: #9dc88d; }
+
+.section-light {
+  background: #f4f4f4; }
 
 h1 {
   font-size: 50px; }
@@ -22,15 +28,19 @@ h1 {
 
 .navbar .active {
   font-weight: 850 !important;
-  color: #f1b24a !important; }
+  color: #ff8533 !important; }
 
-.navbar .sell {
-  background: #f1b24a;
+.navbar .btn-sell {
+  background: #ff8533;
   border-radius: 8%; }
 
+.navbar .btn-sell:hover {
+  background: #f4f4f4;
+  color: #ff8533 !important;
+  border: 2px solid #ff8533 !important; }
+
 #home .navbar {
-  background: #333;
-  opacity: 0.7; }
+  background: rgba(0, 0, 0, 0.5); }
 
 #home #hero {
   background: url("../img/showcase.jpg") no-repeat center center/cover;
@@ -59,11 +69,70 @@ h1 {
   z-index: 10; }
 
 .card-container .col-head {
-  background: #4d774e; }
-
-.card-container .card .card-header {
-  background: #164a41;
+  background: #ff8533;
   color: #fff; }
 
-.card-container .card .card-body .btn-card {
-  background: #4d774e; }
+.card-container .card {
+  overflow: hidden;
+  height: 400px;
+  color: #fff; }
+  .card-container .card .btn-card {
+    background: #4d774e; }
+  .card-container .card img {
+    filter: brightness(0.3); }
+
+#faqs h1 {
+  color: #ff8533; }
+
+#faqs .faqs-line {
+  width: 100%;
+  height: 5px;
+  background: #ff8533; }
+
+#faqs .card {
+  background: #fff0e6;
+  color: #fff; }
+  #faqs .card .btn {
+    color: #fff;
+    /*background: $accent-color;*/ }
+    #faqs .card .btn i {
+      color: #ff8533; }
+  #faqs .card .btn.active {
+    border-color: #fff; }
+
+#contact-us .card .row-spacer {
+  height: 30px; }
+
+#contact-us .card .card-header {
+  color: #fff; }
+
+#contact-us .card form .btn-submit {
+  background: #ff8533;
+  color: #fff; }
+
+#contact-us .card form .btn-submit:hover {
+  background: #f4f4f4;
+  color: #ff8533 !important;
+  border: 2px solid #ff8533 !important; }
+
+#contact-us .card form input:focus {
+  outline-color: #164a41 !important; }
+
+#contact-us .card form .form-line {
+  height: 1px;
+  background: #d3d3d3; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px; }
+  .footer a {
+    color: #fff;
+    margin: 10px 15px; }
+  .footer a:hover {
+    color: #ff8533; }
+  .footer p {
+    color: #fff; }
