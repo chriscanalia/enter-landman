@@ -390,7 +390,7 @@
               <div class="form-group form-text mb-0">Are there any mortgages or liens on the propery?</div>
               <div class="row">
                 <div class="form-check pl-5">
-                  <input class="form-check-input" type="radio" name="liens" id="liensYes" value="option1">
+                  <input class="form-check-input" type="radio" name="liens" id="liensYes" value="yes">
                   <label class="form-check-label" for="liensYes">
                     <small>Yes</small>
                   </label>
@@ -398,11 +398,15 @@
               </div>
               <div class="row form-group">
                 <div class="form-check pl-5">
-                  <input class="form-check-input" type="radio" name="liens" id="liensNo" value="option2">
+                  <input class="form-check-input" type="radio" name="liens" id="liensNo" value="no">
                   <label class="form-check-label" for="liensNo">
                     <small>No</small> 
                   </label>
                 </div>
+              </div>
+              <div class="form-group liens-owed">
+                <label for="taxOwed">Do you know approximately how much is owed?</label>
+                <input type="text" class="form-control" id="taxOwed">
               </div>
               <div class="form-group">
                 <label for="askPrice">What is your asking price?</label>
@@ -422,13 +426,20 @@
 
   <!--Footer-->
   <footer class="footer bg-dark">
-    <div class="social">
-      <a href=""><i class="fab fa-facebook fa-2x"></i></a>
-      <a href=""><i class="fab fa-twitter fa-2x"></i></a>
-      <a href=""><i class="fab fa-youtube fa-2x"></i></a>
-      <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+    <div class="icons">
+      <div class="social">
+        <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+        <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+        <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyrite &copy; 20201 - EnterLandman</p>
     </div>
-    <p>Copyrite &copy; 20201 - EnterLandman</p>
+    <div class="contact">
+      <a role="button" href="tel:+13033057020" class=""><i class="fa fa-phone"></i> 1-303-305-7020</a>
+      <a role="button" href="mailto:enterlandman@gmail.com" class=""><i class="fa fa-envelope"></i> enterlandman@gmail.com</a>
+    </div>
+    
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

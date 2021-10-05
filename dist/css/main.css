@@ -122,17 +122,35 @@ h1 {
   height: 1px;
   background: #d3d3d3; }
 
-.footer {
+#contact-us .card form .liens-owed {
+  display: none;
+  color: red; }
+
+/*.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: 200px;
+*/
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   height: 200px; }
+  .footer .icons p {
+    color: #fff;
+    margin-top: 15px; }
   .footer a {
     color: #fff;
     margin: 10px 15px; }
   .footer a:hover {
-    color: #ff8533; }
-  .footer p {
-    color: #fff; }
+    color: #ff8533;
+    text-decoration: none; }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; }

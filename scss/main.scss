@@ -162,19 +162,34 @@ h1 {
         height: 1px;
         background: #d3d3d3;
       }
+      .liens-owed {
+        display: none;
+        color: red;
+      }
     }
   }
 }
 
 //Footer
-.footer {
+/*.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 200px;
-
+*/
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  .icons {
+    p {
+      color: #fff;
+      margin-top: 15px;
+    }
+  }
   a {
     color: #fff;
     margin: 10px 15px;
@@ -182,8 +197,12 @@ h1 {
 
   a:hover {
     color: $accent-color;
+    text-decoration: none;
   }
-  p {
-    color: #fff;
-  }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
