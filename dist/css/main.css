@@ -12,6 +12,12 @@ body {
 a {
   text-decoration: none; }
 
+.hide {
+  display: none;
+}
+
+
+
 .section-dark {
   background: #9dc88d; }
 
@@ -28,7 +34,8 @@ h1 {
 
 .navbar .active {
   font-weight: 850 !important;
-  color: #ff8533 !important; }
+  color: #ff8533 !important;
+  transition: 0.4 ease-in-out color ; }
 
 .navbar .btn-sell {
   background: #ff8533;
@@ -100,11 +107,15 @@ h1 {
   #faqs .card .btn.active {
     border-color: #fff; }
 
+#contact-us {
+  padding-top: 2.2rem;
+}
 #contact-us .card .row-spacer {
   height: 30px; }
 
 #contact-us .card .card-header {
   color: #fff; }
+
 
 #contact-us .card form .btn-submit {
   background: #ff8533;
@@ -121,6 +132,10 @@ h1 {
 #contact-us .card form .form-line {
   height: 1px;
   background: #d3d3d3; }
+
+#contact-us .card #lengthOwned {
+  
+}
 
 .footer {
   display: flex;
