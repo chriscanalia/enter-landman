@@ -23,14 +23,14 @@
           
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home
+                <a class="nav-link home active" href="#">Home
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#faqs">FAQS</a>
+                <a class="nav-link faqs" href="#faqs">FAQS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact-us">Contact Us</a>
+                <a class="nav-link contact-us" href="#contact-us">Contact Us</a>
               </li>
             </ul>
           
@@ -249,9 +249,9 @@
   <section id="contact-us">
     <div class="section-light container-fluid  py-5 mt-5">
       <div class="container">
-      <div class="card">
-        <h3 class="card-header bg-dark">Get A No Obligation Cash Offer</h3>
-        <div class="card-body">
+        <div class="card">
+          <h3 class="card-header bg-dark">Get A No Obligation Cash Offer</h3>
+          <div class="card-body">
           
             <form>
               <div class="row row-spacer"></div>
@@ -347,8 +347,8 @@
               <div class="form-group form-text mb-0">Are you the owner of the property?</div>
               <div class="row">
                 <div class="form-check pl-5">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                  <label class="form-check-label" for="exampleRadios1">
+                  <input class="form-check-input" type="radio" name="owner" id="ownerChoice1" value="yes">
+                  <label class="form-check-label" for="ownerChoice1">
                     <small>Yes</small>
                   </label>
                 </div>
@@ -356,13 +356,13 @@
               </div>
               <div class="row form-group">
                 <div class="form-check pl-5">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                  <label class="form-check-label" for="exampleRadios2">
+                  <input class="form-check-input" type="radio" name="owner" id="ownerChoice2" value="no">
+                  <label class="form-check-label" for="ownerChoice2">
                     <small>No</small> 
                   </label>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group hide" id="lengthOwned">
                 <label for="lengthOwnership">How long have you owned the property?</label>
                 <input type="text" class="form-control" id="lengthOwnership">
               </div>
@@ -373,20 +373,26 @@
               <div class="form-group form-text mb-0">Are there any delinquent taxes owed on the propery?</div>
               <div class="row">
                 <div class="form-check pl-5">
-                  <input class="form-check-input" type="radio" name="owedTax" id="owedTaxYes" value="option1">
-                  <label class="form-check-label" for="exampleRadios1">
+                  <input class="form-check-input" type="radio" name="owedTax" id="owedTaxYes" value="yes">
+                  <label class="form-check-label" for="owedTaxYes">
                     <small>Yes</small>
                   </label>
                 </div>
               </div>
               <div class="row form-group">
                 <div class="form-check pl-5">
-                  <input class="form-check-input" type="radio" name="owedTax" id="owedTaxNo" value="option2">
+                  <input class="form-check-input" type="radio" name="owedTax" id="owedTaxNo" value="no">
                   <label class="form-check-label" for="owedTaxNo">
                     <small>No</small> 
                   </label>
                 </div>
               </div>
+
+              <div class="form-group hide" id="taxOwed">
+                <label for="delTaxOwed">How much delinquent taxes are owed?</label>
+                <input type="text" class="form-control" id="delTaxOwed">
+              </div>
+
               <div class="form-group form-text mb-0">Are there any mortgages or liens on the propery?</div>
               <div class="row">
                 <div class="form-check pl-5">
@@ -404,10 +410,13 @@
                   </label>
                 </div>
               </div>
-              <div class="form-group liens-owed">
-                <label for="taxOwed">Do you know approximately how much is owed?</label>
-                <input type="text" class="form-control" id="taxOwed">
+
+
+              <div class="form-group hide" id="lienOwed">
+                <label for="delLienOwed">How much in mortgages or liens are owed?</label>
+                <input type="text" class="form-control" id="delLienOwed">
               </div>
+
               <div class="form-group">
                 <label for="askPrice">What is your asking price?</label>
                 <input type="text" class="form-control" id="askPrice">
